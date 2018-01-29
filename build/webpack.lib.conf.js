@@ -20,6 +20,10 @@ var webpackConfig = merge(baseWebpackConfig, {
       extract: true
     })
   },
+  externals: {
+    vue: 'vue',
+    uppy: 'uppy'
+  },
   devtool: config.lib.productionSourceMap ? '#source-map' : false,
   output: {
     path: config.lib.assetsRoot,

@@ -20,6 +20,10 @@
     "uppy": "^0.22.1",
     "vue": "^2.3.3"
   },
+  "files": [
+    "dist/lib/vue-uppy-cloudinary.min.js",
+    "dist/lib/vue-uppy-cloudinary.min.css"
+  ],
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.22.1",
