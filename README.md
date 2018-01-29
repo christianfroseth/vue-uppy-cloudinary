@@ -12,7 +12,7 @@ npm install vue-uppy-cloudinary --save
 <template>
   <div id="app">
     <h1>Demo</h1>
-    <uppy-cloudinary-uploader
+    <vue-uppy-cloudinary
       preset="[your-cloudinary-preset]"
       cloudName="[your-cloudinary-cloud-name]"
     />
