@@ -1,6 +1,6 @@
 {
   "name": "vue-uppy-cloudinary",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A VueJs based uploader that utilizes Uppy.io and Cloudinary",
   "author": "Christian Froseth <christianfroseth@gmail.com>",
   "main": "dist/lib/vue-uppy-cloudinary.min.js",
