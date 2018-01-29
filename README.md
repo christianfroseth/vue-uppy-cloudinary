@@ -21,6 +21,7 @@ npm install vue-uppy-cloudinary --save
 
 <script>
 import VueUppyCloudinary from 'vue-uppy-cloudinary';
+import 'vue-uppy-cloudinary/dist/lib/vue-uppy-cloudinary.min.css'
 
 export default {
   components: {
