@@ -1,9 +1,14 @@
 # Vue-Uppy-Cloudinary
 [![GitHub issues](https://img.shields.io/github/issues/christianfroseth/vue-uppy-cloudinary.svg)](https://github.com/christianfroseth/vue-uppy-cloudinary/issues)
 [![GitHub license](https://img.shields.io/github/license/christianfroseth/vue-uppy-cloudinary.svg)](https://github.com/christianfroseth/vue-uppy-cloudinary/blob/master/LICENSE)
-> A VueJs based uploader that utilizes Uppy.io and Cloudinary
 
-[Simple demo](https://christianfroseth.github.io/vue-uppy-cloudinary/index.html)
+> A VueJs based uploader that utilizes Uppy.io and Cloudinary. 
+
+<img src="https://opencollective-production.s3-us-west-1.amazonaws.com/ca272d00-958a-11e7-990a-e919fb36989b.png" width="256" height="256" title="VueJS"/>
+<img src="https://uppy.io/images/uppy-social.jpg" width="356" height="200" title="Uppy"/>
+<img src="https://cloudinary-res.cloudinary.com/image/asset/dpr_2.0/logo-e0df892053afd966cc0bfe047ba93ca4.png" width="356" height="156" title="Cloudinary"/>
+
+##[Demo](https://christianfroseth.github.io/vue-uppy-cloudinary/index.html)
 
 ## Install
 ```npm
@@ -40,21 +45,27 @@ Sign up with Cloudinary for a free account. Input your cloud name and define a u
   <div id="app">
     <h1>Demo</h1>
     <vue-uppy-cloudinary
-      preset="[your-cloudinary-preset]"
-      cloudName="[your-cloudinary-cloud-name]"
-    />
+          preset="b0gbylpo"
+          cloudName="lthekxbe9"
+          @uploaded="uploaded"
+        />
   </div>
 </template>
 
 <script>
-import VueUppyCloudinary from 'vue-uppy-cloudinary';
-import 'vue-uppy-cloudinary/dist/lib/vue-uppy-cloudinary.min.css'
+  import VueUppyCloudinary from 'vue-uppy-cloudinary';
+  import 'vue-uppy-cloudinary/dist/lib/vue-uppy-cloudinary.min.css'
 
-export default {
-  components: {
-    VueUppyCloudinary,
-  },
-};
+  export default {
+    components: {
+      VueUppyCloudinary,
+    },
+    methods: {
+      uploaded(data) {
+        console.log(data);
+      }
+    },
+  }
 </script>
 ```
 
@@ -80,3 +91,7 @@ export default {
  | ------------- |:-------------:
  | uploaded  | Fired when upload completes. Contains the data object returned from Cloudinary
  | upload-progress  | Fired during upload. Contains a standard XHR progress object
+
+## Uploaded event
+The uploaded event will contain data from Cloudinary such as image url (http and https), public_id, resource_type, etag, format and so on.
+The payload will differ depending on your assigned upload preset
