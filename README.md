@@ -4,9 +4,7 @@
 
 > A VueJs based uploader that utilizes Uppy.io and Cloudinary. 
 
-<img src="https://opencollective-production.s3-us-west-1.amazonaws.com/ca272d00-958a-11e7-990a-e919fb36989b.png" width="256" height="256" title="VueJS"/>
-<img src="https://uppy.io/images/uppy-social.jpg" width="356" height="200" title="Uppy"/>
-<img src="https://cloudinary-res.cloudinary.com/image/asset/dpr_2.0/logo-e0df892053afd966cc0bfe047ba93ca4.png" width="356" height="156" title="Cloudinary"/>
+> <img src="https://opencollective-production.s3-us-west-1.amazonaws.com/ca272d00-958a-11e7-990a-e919fb36989b.png" width="156" height="156" title="VueJS"/><img src="https://uppy.io/images/uppy-social.jpg" width="256" height="100" title="Uppy"/><img src="https://cloudinary-res.cloudinary.com/image/asset/dpr_2.0/logo-e0df892053afd966cc0bfe047ba93ca4.png" width="256" height="56" title="Cloudinary"/>
 
 ##[Demo](https://christianfroseth.github.io/vue-uppy-cloudinary/index.html)
 
